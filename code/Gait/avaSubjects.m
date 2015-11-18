@@ -1,0 +1,6 @@
+% File: avaSubjects.m
+
+gt_subjects = {'angel', 'aurora', 'david', 'eusebio', 'fernando', 'francisco',... 
+    'franciscomanuel', 'javiperez', 'josemanuel', 'manolo', 'manu', 'maria',... 
+    'nacho', 'nele', 'nicolas', 'pablo', 'rafa', 'sergio', 'tina', 'victor'};
+gt_labels = [1:20]';
