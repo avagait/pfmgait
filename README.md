@@ -3,7 +3,16 @@ Pyramidal Fisher Motion descriptor
 
 F.M. Castro and [M.J. Marin-Jimenez](http://www.uco.es/~in1majim/)
 
-See ```README.pfm.txt``` and ```README.audio.txt``` for details.
+Quick start
+-----------
+Start Matlab and setup [VLFeat library](http://www.vlfeat.org/), then, type the following commands:
+```matlab
+cd <pfmrootfolder>
+addpath(genpath(pwd))
+demopfm
+```
+
+See ```README.pfm.txt``` and ```README.audio.txt``` for further details.
 
 If you use this code, please, cite any of the following papers:
 
