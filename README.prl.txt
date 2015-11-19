@@ -33,7 +33,7 @@ mjmarin<AT>uco<DOT>es
 References
 ~~~~~~~~~~
 
-[1] F.M. Castro, M. Marin-Jimenez, A. Carmona-Poyato, N. Guil, 
+[1] M. Marin-Jimenez, F.M. Castro, A. Carmona-Poyato, N. Guil, 
 "On how to improve tracklet-based gait recognition systems", Pattern Recognition Letters, vol. 68, 2015, pp. 103-110
 
 [2] M. Jain, H. Jegou, and P. Bouthemy, 
