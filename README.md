@@ -1,7 +1,7 @@
 Pyramidal Fisher Motion descriptor
 ==================================
 
-F.M. Castro and [M.J. Marin-Jimenez](http://www.uco.es/~in1majim/)
+[F.M. Castro](https://scholar.google.es/citations?hl=es&user=xXZz8m4AAAAJ) and [M.J. Marin-Jimenez](http://www.uco.es/~in1majim/)
 
 Quick start
 -----------
