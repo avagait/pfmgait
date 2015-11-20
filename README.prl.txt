@@ -6,8 +6,9 @@ F.M. Castro and M.J. Marin-Jimenez
 Contents
 ~~~~~~~~
 
-This package contains:
- - Matlab code for reproducing experiments presented in [1]
+This package contains Matlab code for reproducing experiments presented in [1]:
+ * demoSparseTracklets: demo on how to compute sparse tracklets and apply RootDCS
+ * demometric: demo on how to apply metric learning to PFM descriptors
 
 Prerequisites
 ~~~~~~~~~~~~~
@@ -21,6 +22,7 @@ Quick start
 2) cd <pfmrootdir>
 3) addpath(genpath(pwd))
 4) demoSparseTracklets
+5) demometric
 
 Support
 ~~~~~~~
