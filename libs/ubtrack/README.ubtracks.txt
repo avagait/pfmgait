@@ -65,7 +65,7 @@ Troubleshooting
   It is built for debian linux 3.1. If you have a difference linux release, it might fail on your machine.
   In this case, a typical error you will get is 
 
-  Caught boost::filesystem::path: invalid name "ÿØÿà
+  Caught boost::filesystem::path: invalid name "Ã¿Ã˜Ã¿Ã 
 
 
 - If the above suggestion fails, you must install the latest version of libImlib2 and everything should work fine.
