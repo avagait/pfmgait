@@ -5,9 +5,9 @@
 videosdir = './data';
 detectionsdir = './data';
 experdirbase = './data/tmp';
-detfile = 'p005_n05.mat';       % CHANGE ME!
+detfile = 'p005-n05.mat';       % CHANGE ME!
+videofile = 'p005-n05.avi';       % CHANGE ME!
 outputname = '005-n-05_fb_tracks.mat';    % CHANGE ME!
-ublibpath = '';     % Path to the library used for tracking.
 minFrames = 0;      % Minimum number of frames that a track must have.
 detectionOffset = 3; % Offset added to every BB score. Used to normalize
 % scores between different detectors.
@@ -23,7 +23,6 @@ det = det.detections;
 % Building the matrix for the tracking process.
 detections = zeros(10, length(det));
 T = regexp(det(1).image_path, '/', 'split');
-name = strcat(full_name{1}, '.avi');
 for j=1:length(det)
     T = regexp(det(j).image_path, '/', 'split');
     T = regexp(T{1, length(T)}, '\.', 'split');
@@ -45,8 +44,7 @@ detections = mj_filterInsideDets(detections);
 shot = [detections(1, 1) detections(1, size(detections, 2))];
 
 % Tracking.
-ubpath = fullfile(ublibpath, 'ubtrack/matlab');
-addpath(ubpath);
+addpath('./libs/ubtrack/matlab');
 tracks = track(detections, shot, pars);
 scores = fc_evaluateTracks(tracks, minFrames, detectionOffset);
 
@@ -67,7 +65,7 @@ end
 scoredTracks = struct('tracks', tracks, 'scores', scores);
 
 if length(tracks) > 1
-    scoredTracks = fc_joinTracks(fullfile(videosdir, name), scoredTracks, nBeans, metric, joinThreshold);
+    scoredTracks = fc_joinTracks(fullfile(videosdir, videofile), scoredTracks, nBeans, metric, joinThreshold);
 end
 
 % Save results.
