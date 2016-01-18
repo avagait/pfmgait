@@ -5,7 +5,7 @@
 dtdir = './data';
 trackdir = './data/tmp';
 experdirbase = './data/tmp';
-dtfile = 'p005_n05.mat';       % CHANGE ME!
+dtfile = 'p005-n05.mat';       % CHANGE ME!
 trackfile = '005-n-05_fb_tracks.mat';       % CHANGE ME!
 outputname = '005-n-05_W01_H02.mat';    % CHANGE ME!
 grid.horizontal = 1; % Array that contains the percentage limits of the
@@ -22,7 +22,8 @@ features = features.F;
 
 % Loading tracks.
 tracks = load(fullfile(trackdir, trackfile));
-tracks = tracks.detections;
+scores = tracks.detections.scores;
+tracks = tracks.detections.tracks;
 
 % Cleaning and saving tracks.
 allFeatures = [];
