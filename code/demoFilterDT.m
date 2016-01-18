@@ -3,7 +3,7 @@
 %
 
 dtdir = './data';
-trackdir = './data';
+trackdir = './data/tmp';
 experdirbase = './data/tmp';
 dtfile = 'p005-n05_dt.mat';       % CHANGE ME!
 trackfile = '005-n-05_fb_tracks.mat';       % CHANGE ME!
