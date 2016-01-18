@@ -8,7 +8,7 @@ avifile = 'p005-n05.avi';       % CHANGE ME!
 minArea = 1000;     % Minimum area of the BB. Adapt to your dataset.
 aspectRatio = 3;    % Aspect ratio between width and height of the BB.
 offset = 0.2;       % Percentage of increase of each dimension of the BB.
-drawBB = true;     % Draw BB?
+drawBB = false;     % Draw BB?
 
 if ~exist(experdirbase, 'dir')
    mkdir(experdirbase);
@@ -46,6 +46,6 @@ while ~isDone(videoSource)
 end
 
 release(videoSource);
-output = fullfile(experdirbase, [videoname '.mat']);
+output = fullfile(experdirbase, [videoname '-bb.mat']);
 save(output, 'BB');
 fprintf('Writed file %s. \n', videoname);

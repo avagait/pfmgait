@@ -15,7 +15,7 @@ end
 dbname = 'tum';
 mj_gaitLocalPaths;
 
-extractAudioFeatures = true;        % CHANGE ME!
+extractAudioFeatures = false;        % CHANGE ME!
 
 %% Extract audio features
 if extractAudioFeatures

@@ -5,7 +5,7 @@
 videosdir = './data';
 detectionsdir = './data/tmp';
 experdirbase = './data/tmp';
-detfile = 'p005-n05.mat';       % CHANGE ME!
+detfile = 'p005-n05-bb.mat';       % CHANGE ME!
 videofile = 'p005-n05.avi';       % CHANGE ME!
 outputname = '005-n-05_fb_tracks.mat';    % CHANGE ME!
 minFrames = 0;      % Minimum number of frames that a track must have.
