@@ -5,7 +5,7 @@
 dtdir = './data';
 trackdir = './data/tmp';
 experdirbase = './data/tmp';
-dtfile = 'p005-n05_dt.mat';       % CHANGE ME!
+dtfile = 'p005-n05.mat';       % CHANGE ME!
 trackfile = '005-n-05_fb_tracks.mat';       % CHANGE ME!
 outputname = '005-n-05_W01_H02.mat';    % CHANGE ME!
 grid.horizontal = 1; % Array that contains the percentage limits of the
