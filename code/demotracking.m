@@ -3,7 +3,7 @@
 %
 
 videosdir = './data';
-detectionsdir = './data';
+detectionsdir = './data/tmp';
 experdirbase = './data/tmp';
 detfile = 'p005-n05.mat';       % CHANGE ME!
 videofile = 'p005-n05.avi';       % CHANGE ME!
@@ -19,7 +19,7 @@ nBeans = 16; % Number of components of the histograms.
 
 %% Run it!
 det = load(fullfile(detectionsdir, detfile));
-det = det.detections;
+det = det.BB;
 % Building the matrix for the tracking process.
 detections = zeros(10, length(det));
 T = regexp(det(1).image_path, '/', 'split');
