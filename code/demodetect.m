@@ -10,6 +10,10 @@ aspectRatio = 3;    % Aspect ratio between width and height of the BB.
 offset = 0.2;       % Percentage of increase of each dimension of the BB.
 drawBB = true;     % Draw BB?
 
+if ~exist(experdirbase, 'dir')
+   mkdir(experdirbase);
+end
+
 %% Run it!
 [folder, videoname, ext] = fileparts(avifile);
 BB = [];
