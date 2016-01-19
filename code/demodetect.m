@@ -48,4 +48,4 @@ end
 release(videoSource);
 output = fullfile(experdirbase, [videoname '-bb.mat']);
 save(output, 'BB');
-fprintf('Writed file %s. \n', videoname);
+fprintf('Written file %s. \n', videoname);

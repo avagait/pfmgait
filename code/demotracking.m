@@ -72,4 +72,4 @@ end
 detections = scoredTracks;
 output = fullfile(experdirbase, [outputname '.mat']);
 save(output, 'detections');
-fprintf('Writed file %s. \n', outputname);
+fprintf('Written file %s. \n', outputname);
