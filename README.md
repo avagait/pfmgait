@@ -27,7 +27,7 @@ If you use this code, please, cite any of the following papers:
 [3] M. Marin-Jimenez, F.M. Castro, A. Carmona-Poyato, N. Guil,
 ["On how to improve tracklet-based gait recognition systems"](http://www.sciencedirect.com/science/article/pii/S0167865515002901), Pattern Recognition Letters, vol. 68, 2015, pp. 103-110
 
-[4] M. Marin-Jimenez, F.M. Castro, A. Carmona-Poyato, R. Muñoz Salinas,
+[4] M. Marin-Jimenez, F.M. Castro, N. Guil, R. Muñoz Salinas,
 ["Fisher Motion Descriptor for Multiview Gait Recognition"] (http://arxiv.org/abs/1601.06931)
 arXiv:1601.06931, January 2016
 
