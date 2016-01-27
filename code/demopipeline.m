@@ -20,8 +20,11 @@ demotracking;
 %% Tracklets computation
 demoExtractDT;
 
-%% Traclets filtering
+%% Tracklets filtering
 demoFilterDT;
+
+%% Sparse tracklets
+% demoSparseTracklets;
 
 %% Compute PFM descriptor
 demopfm;
