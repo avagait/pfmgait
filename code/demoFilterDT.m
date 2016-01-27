@@ -1,11 +1,15 @@
 % File: demoFilterDT.m
 % Tracking of the detections in a sequence.
 %
+% See Castro et al., ICPR'2014
 
+disp('** This demo shows how to filter out dense tracklets given people detections **');
+
+%% Configuration
 dtdir = './data';
 trackdir = './data/tmp';
 experdirbase = './data/tmp';
-dtfile = 'p005-n05.mat';       % CHANGE ME!
+dtfile = 'p005-n05.wFlowT0C1.features.mat'; %'p005-n05.mat';       % CHANGE ME!
 trackfile = '005-n-05_fb_tracks.mat';       % CHANGE ME!
 outputname = '005-n-05_W01_H02.mat';    % CHANGE ME!
 grid.horizontal = 1; % Array that contains the percentage limits of the
@@ -37,6 +41,6 @@ end
 
 % Save results.
 detections = allFeatures;
-output = fullfile(experdirbase, [outputname '.mat']);
+output = fullfile(experdirbase, outputname);
 save(output, 'detections');
 fprintf('Written file %s. \n', outputname);

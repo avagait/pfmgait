@@ -2,6 +2,9 @@
 % Tracking of the detections in a sequence.
 %
 
+disp('** This demo shows how to generate people tracks from detections **');
+
+%% Configuration
 videosdir = './data';
 detectionsdir = './data/tmp';
 experdirbase = './data/tmp';
@@ -70,6 +73,6 @@ end
 
 % Save results.
 detections = scoredTracks;
-output = fullfile(experdirbase, [outputname '.mat']);
+output = fullfile(experdirbase, outputname);
 save(output, 'detections');
 fprintf('Written file %s. \n', outputname);
