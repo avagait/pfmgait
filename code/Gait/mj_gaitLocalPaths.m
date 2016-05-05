@@ -54,7 +54,7 @@ switch lower(dbname)
         end
         
         %% TUM-GAIT
-    case {'tum', 'tum_gaid', 'tum_gaid_audio', 'tum_gaid_depth', 'tum_gaid_gender', 'tum_gaid_audio_gender'}
+    case {'tum', 'tum_gaid', 'tum_gaid_audio', 'tum_gaid_depth', 'tum_gaid_gender', 'tum_gaid_audio_gender', 'tum_gaid_shoes'}
         if ispc
             experdir = '.\data';
             labelsdir = '.\data';
