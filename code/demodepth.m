@@ -12,7 +12,7 @@ if ~exist('vl_version', 'file')
 end
 
 %% Config for the database
-dbname = 'tum_depth';
+dbname = 'tum_gaid_depth';
 mj_gaitLocalPaths;
 
 extractGaitFeatures = false;        % CHANGE ME!
