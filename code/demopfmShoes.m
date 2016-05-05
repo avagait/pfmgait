@@ -66,7 +66,7 @@ if exist(matsvm, 'file')
    disp('Classifying PFM descriptor...');
    labels_all = load('./data/allshoetype.lst');
    labels_gt = mj_gaitLabFromName(dbname, mattracks, labels_all);   
-   [vidEstClass, svmscores, acc_test, acc_test_pc] = mj_classifyMultiClass(pfmCompressed, labels_gt, model);
+   [vidEstClass, svmscores, acc_test, acc_test_pc] = fc_classifyRUSBoost(pfmCompressed, labels_gt, model);
    fprintf('Estimated label for sample is %d with score %.4f \n', labels_all(vidEstClass), max(svmscores));
    if (labels_all(vidEstClass) == labels_gt)
       disp('Correct!');
