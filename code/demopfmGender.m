@@ -12,7 +12,7 @@ if ~exist('vl_version', 'file')
 end
 
 %% Config for the database
-dbname = 'tum_gender';
+dbname = 'tum_gaid_gender';
 mj_gaitLocalPaths;
 
 extractGaitFeatures = false;        % CHANGE ME!
