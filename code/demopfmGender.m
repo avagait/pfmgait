@@ -1,6 +1,6 @@
-% Demo for Pyramidal Fisher Motion
+% Demo for Pyramidal Fisher Motion applied to Gender recognition
 %
-% See Castro et al., ICPR'2014
+% See Castro et al., MVA'2016
 %
 % (c) MJMJ/2015
 
