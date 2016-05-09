@@ -1,5 +1,5 @@
-Multimodal feature fusion for gait recognition
-==============================================
+﻿Multimodal features fusion for gait, gender and shoes recognition
+=================================================================
 
 F.M. Castro and M.J. Marin-Jimenez
 
@@ -7,7 +7,7 @@ Contents
 ~~~~~~~~
 
 This package contains:
- - Matlab code for computing the audio-visual descriptors proposed in [1].
+ - Matlab code for computing the multimodal gait descriptors proposed in [1] and based on [2].
 
 Prerequisites
 ~~~~~~~~~~~~~
@@ -21,7 +21,9 @@ Quick start
 1) Start Matlab
 2) cd <pfmrootdir>
 3) addpath(genpath(pwd))
-4) demofusion
+4) demodepth
+5) demopfmGender
+6) demopfmShoes
 
 Support
 ~~~~~~~
@@ -34,8 +36,8 @@ mjmarin<AT>uco<DOT>es
 References
 ~~~~~~~~~~
 
-[1] Francisco M. Castro, Manuel J. Marín-Jiménez, Nicolás Guil, 
-"Empirical Study of Audio-Visual Features Fusion for Gait Recognition", CAIP, 2015, pp. 727-739
+[1] F.M. Castro, M. Marin-Jimenez, N. Guil, 
+"Multimodal features fusion for gait, gender and shoes recognition", Machine Vision and Applications, May 2016
 
 [2] Francisco M. Castro, Manuel J. Marín-Jiménez, Rafael Medina Carnicer,
 "Pyramidal Fisher Motion for Multiview Gait Recognition", in Proc. ICPR, 2014, pp. 1692-1697

@@ -27,7 +27,7 @@ Quick start
 Support
 ~~~~~~~
 
-For any query/suggestion/complaint or simply to say you like/use the annotation and software just drop us an email
+For any query/suggestion/complaint or simply to say you like/use the software, just drop us an email
 
 fcastro<AT>uma<DOT>es
 mjmarin<AT>uco<DOT>es
