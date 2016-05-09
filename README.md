@@ -9,12 +9,13 @@ Start Matlab and setup [VLFeat library](http://www.vlfeat.org/), then, type the 
 ```matlab
 cd <pfmrootfolder>
 addpath(genpath(pwd))
+downloadPFMData        % Optional
 demopfm
 ```
 
 Alternatively, you can run the whole pipeline from an 'avi' video by typing ```demopipeline``` in Matlab.
 
-See ```README.pfm.txt```[1],  ```README.audio.txt```[2] and ```README.prl.txt```[3] for further details.
+See ```README.pfm.txt```[1,4],  ```README.audio.txt```[2], ```README.prl.txt```[3] and ```README.mva.txt```[5] for further details.
 
 If you use this code, please, cite any of the following papers:
 
