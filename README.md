@@ -31,3 +31,6 @@ If you use this code, please, cite any of the following papers:
 ["Fisher Motion Descriptor for Multiview Gait Recognition"] (http://arxiv.org/abs/1601.06931)
 arXiv:1601.06931, January 2016
 
+[5] F.M. Castro, M. Marin-Jimenez, N. Guil,
+["Multimodal features fusion for gait, gender and shoes recognition"] (https://doi.org/10.1007/s00138-016-0767-5)
+Machine Vision and Applications, May 2016
