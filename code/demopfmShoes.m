@@ -56,7 +56,7 @@ disp(size(pfm))
 clear detections
 
 %% OPTIONAL: apply PCA compression if needed and classify
-matsvm = 'full_model_svmlin_K=0600_PCAH256_nFrames=0000_overlap=00.mat';
+matsvm = 'full_model_rb_K=0600_PCAH256_nFrames=0000_overlap=00.mat';
 if exist(matsvm, 'file')   
    load(matsvm); model = model.model;
    disp('Compressing PFM descriptor...');
