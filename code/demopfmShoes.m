@@ -12,7 +12,7 @@ if ~exist('vl_version', 'file')
 end
 
 %% Config for the database
-dbname = 'tum_shoes';
+dbname = 'tum_gaid_shoes';
 mj_gaitLocalPaths;
 
 extractGaitFeatures = false;        % CHANGE ME!
@@ -64,11 +64,11 @@ if exist(matsvm, 'file')
    pfmCompressed = pcaobj.encode(pfm');
    
    disp('Classifying PFM descriptor...');
-   labels_all = load('./data/allshoetype.lst');
+   labels_all = load('./data/allshoetype.txt');
    labels_gt = mj_gaitLabFromName(dbname, mattracks, labels_all);   
-   [vidEstClass, svmscores, acc_test, acc_test_pc] = fc_classifyRUSBoost(pfmCompressed, labels_gt, model);
-   fprintf('Estimated label for sample is %d with score %.4f \n', labels_all(vidEstClass), max(svmscores));
-   if (labels_all(vidEstClass) == labels_gt)
+   [vidEstClass, svmscores, acc_test, acc_test_pc] = fc_classifyRUSBoost(pfmCompressed, labels_gt, model.model);
+   fprintf('Estimated label for sample is %d with score %.4f \n', vidEstClass, max(svmscores));
+   if (vidEstClass == labels_gt)
       disp('Correct!');
    else
       disp('Failure');

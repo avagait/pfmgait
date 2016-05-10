@@ -39,7 +39,7 @@ switch lower(dbname)
         id = regexp(name{1}, '\d+', 'match');
         label = str2double(id{1});
         
-    case {'tum_gender', 'tum_gaid_gender'}
+    case {'tum_gender', 'tum_gaid_gender', 'tum_shoes', 'tum_gaid_shoes'}
         parts = regexp(filename, '_', 'split');
         name = regexp(parts{1}, '-', 'split');
         id = regexp(name{1}, '\d+', 'match');

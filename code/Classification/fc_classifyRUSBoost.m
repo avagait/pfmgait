@@ -45,11 +45,13 @@ function [vidEstClass, scores, acc_test, acc_test_pc] = fc_classifyRUSBoost(samp
 nclasses = length(model.ClassNames);
 
 %% Prepare reference labels
- ulabsT = unique(labels(labels > 0));
- if length(ulabsT) < nclasses % There are not test samples from all classes
-     ulabsT = [1:size(sample, 1)];
- end
- vidEstClass(labels > 0) = ulabsT(vidEstClass(labels > 0))';
+%  ulabsT = unique(labels(labels > 0));
+%  if length(ulabsT) < nclasses % There are not test samples from all classes
+%      ulabsT = [1:size(samples, 1)];
+%  end
+%  vidEstClass(labels > 0) = ulabsT(vidEstClass(labels > 0))';
+
+vidEstClass = vidEstClass(labels > 0);
 
 %% Accuracy
 if ~isempty(labels)

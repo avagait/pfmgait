@@ -67,8 +67,8 @@ if exist(matsvm, 'file')
    labels_all = load('./data/allgender.txt');
    labels_gt = mj_gaitLabFromName(dbname, mattracks, labels_all);   
    [vidEstClass, svmscores, acc_test, acc_test_pc] = mj_classifyMultiClass(pfmCompressed, labels_gt, model);
-   fprintf('Estimated label for sample is %d with score %.4f \n', labels_all(vidEstClass), max(svmscores));
-   if (labels_all(vidEstClass) == labels_gt)
+   fprintf('Estimated label for sample is %d with score %.4f \n', vidEstClass, max(svmscores));
+   if (vidEstClass == labels_gt)
       disp('Correct!');
    else
       disp('Failure');
