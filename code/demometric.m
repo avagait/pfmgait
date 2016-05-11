@@ -6,7 +6,7 @@
 
 disp('** This demo shows how to compress PFM descriptors. **');
 
-matfeats = './data/005-n-05_W01_H02.mat';
+matfeats = './data/008-n-05_W01_H02.mat';
 load(matfeats); % Contains variable 'detections'
 
 mlmodel = 'classunreg';

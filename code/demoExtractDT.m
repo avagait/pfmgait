@@ -7,7 +7,7 @@ disp('** This demo shows how to extract dense tracklets from a video sequence **
 %% Configuration
 videosdir = './data';
 experdirbase = './data/tmp';
-avifile = 'p005-n05.avi';                       % CHANGE ME!
+avifile = 'p008-n05.avi';                       % CHANGE ME!
 [folder, videoname, ext] = fileparts(avifile);
 
 %% Config

@@ -20,19 +20,19 @@ extractAudioFeatures = false;        % CHANGE ME!
 %% Extract audio features
 if extractAudioFeatures
    if ~exist('miraudio' ,'file')
-      error('Please, add "MIR toolbox" to Matlab´s path before calling this demo.');
+      error('Please, add "MIR toolbox" to Matlabï¿½s path before calling this demo.');
    end
    
    whichFAud = [0 1 1 1];
    audiopars.sampling = 16000;
-   aufile = './data/audio_p005_n05.wav';
+   aufile = './data/audio_p008_n05.wav';
    feats = mj_extractAudioFeats(aufile, whichFAud, audiopars);
 end
 
 %% Let's assume that you have already extracted audio features for the 
  % target video with the code provided in
  % http://www.uco.es/~in1majim/research/gait.html
-mataudio = './data/p005_n05.mat';
+mataudio = './data/p008_n05.mat';
 load(mataudio); % Contains variable 'feats'
 
 % Load dictionary for FV, already learnt

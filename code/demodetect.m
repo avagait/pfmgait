@@ -7,7 +7,7 @@ disp('** This demo shows how to detect people in a video sequence **');
 %% Configuration
 videosdir = './data';
 experdirbase = './data/tmp';
-avifile = 'p005-n05.avi';       % CHANGE ME!
+avifile = 'p008-n05.avi';       % CHANGE ME!
 minArea = 1000;     % Minimum area of the BB. Adapt to your dataset.
 aspectRatio = 3;    % Aspect ratio between width and height of the BB.
 offset = 0.2;       % Percentage of increase of each dimension of the BB.

@@ -26,7 +26,7 @@ end
 %% Let's assume that you have already computed dense tracks for the 
  % target video and applied tracking to the person with the code provided
  % in http://www.uco.es/~in1majim/research/gait.html
-mattracks = './data/005-n-05_W01_H02.mat';
+mattracks = './data/008-n-05_W01_H02.mat';
 load(mattracks); % Contains variable 'detections'
 
 % Load dictionary for FV, already learnt

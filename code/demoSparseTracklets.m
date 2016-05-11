@@ -8,8 +8,8 @@
 disp('** This demo shows how to select sparse tracklets from dense ones **');
 
 %% Configuration
-matfeats = './data/005-n-05_W01_H02.mat';
-avifile = './data/p005-n05.avi';
+matfeats = './data/008-n-05_W01_H02.mat';
+avifile = './data/p008-n05.avi';
 load(matfeats); % Contains 'detections'
 
 prcj = 0.5; % Percentage in (0,1]
